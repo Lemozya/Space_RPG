@@ -1,0 +1,533 @@
+{
+    "project_type": "sci-fi game",
+    "schema_version": "1.0",
+    "notes": [
+        "Предпочитай источники с CC0/Public Domain для автозагрузки в пайплайн.",
+        "Для Freesound, OpenGameArt, Sketchfab и itch.io проверяй лицензию у каждого конкретного ассета.",
+        "Перед импортом в проект сохраняй license.txt или metadata.json рядом с ассетом."
+    ],
+    "priority_order": [
+        "poly_haven",
+        "ambientcg",
+        "kenney",
+        "quaternius",
+        "game_icons",
+        "google_fonts",
+        "freesound",
+        "open_game_art",
+        "sketchfab",
+        "itch_io"
+    ],
+    "categories": {
+        "fonts": [
+            {
+                "id": "google_fonts",
+                "title": "Google Fonts",
+                "url": "https://fonts.google.com/",
+                "source_type": "fonts",
+                "license_model": "Open source fonts, usually OFL/Apache/UFL depending on family",
+                "api_friendly": true,
+                "github": "https://github.com/google/fonts",
+                "recommended_for": [
+                    "ui",
+                    "hud",
+                    "menus",
+                    "fallback fonts"
+                ],
+                "notes": "Надежный источник для интерфейсных шрифтов."
+            },
+            {
+                "id": "orbitron",
+                "title": "Orbitron",
+                "url": "https://github.com/theleagueof/orbitron",
+                "source_type": "font",
+                "license_model": "OFL",
+                "api_friendly": true,
+                "recommended_for": [
+                    "sci-fi titles",
+                    "heads-up display",
+                    "terminal ui"
+                ],
+                "notes": "Классический sci-fi display шрифт."
+            },
+            {
+                "id": "fontsource",
+                "title": "Fontsource",
+                "url": "https://github.com/fontsource/fontsource",
+                "source_type": "fonts",
+                "license_model": "Depends on font package",
+                "api_friendly": true,
+                "recommended_for": [
+                    "web launcher",
+                    "electron ui",
+                    "react ui"
+                ],
+                "notes": "Удобно подключать как npm-пакеты."
+            }
+        ],
+        "textures_materials_hdri": [
+            {
+                "id": "poly_haven",
+                "title": "Poly Haven",
+                "url": "https://polyhaven.com/",
+                "source_type": "textures_hdri_models",
+                "license_model": "CC0",
+                "api_friendly": true,
+                "recommended_for": [
+                    "pbr materials",
+                    "hdri lighting",
+                    "industrial sci-fi surfaces"
+                ],
+                "notes": "Один из лучших источников для автоматического пайплайна."
+            },
+            {
+                "id": "ambientcg",
+                "title": "ambientCG",
+                "url": "https://ambientcg.com/",
+                "source_type": "textures_hdri_models",
+                "license_model": "CC0",
+                "api_friendly": true,
+                "recommended_for": [
+                    "pbr materials",
+                    "surface atlases",
+                    "prototype environments"
+                ],
+                "notes": "Большая база материалов и HDRI."
+            },
+            {
+                "id": "kenney_dev_essentials",
+                "title": "Kenney Development Essentials",
+                "url": "https://kenney.nl/assets/development-essentials",
+                "source_type": "textures_prototyping",
+                "license_model": "CC0 / Public Domain style release",
+                "api_friendly": false,
+                "recommended_for": [
+                    "greybox",
+                    "prototype ui",
+                    "placeholder textures"
+                ],
+                "notes": "Хорошо для ранней стадии."
+            },
+            {
+                "id": "open_game_art_textures",
+                "title": "OpenGameArt",
+                "url": "https://opengameart.org/",
+                "source_type": "mixed assets",
+                "license_model": "Mixed, verify per asset",
+                "api_friendly": false,
+                "recommended_for": [
+                    "extra textures",
+                    "backup source",
+                    "community assets"
+                ],
+                "notes": "Проверяй лицензию каждого ассета."
+            }
+        ],
+        "models_3d": [
+            {
+                "id": "quaternius",
+                "title": "Quaternius",
+                "url": "https://quaternius.com/",
+                "source_type": "3d models",
+                "license_model": "CC0",
+                "api_friendly": false,
+                "recommended_for": [
+                    "low poly sci-fi",
+                    "characters",
+                    "props",
+                    "environments"
+                ],
+                "notes": "Очень удобный источник для инди-проекта."
+            },
+            {
+                "id": "quaternius_modular_scifi_megakit",
+                "title": "Quaternius Modular Sci-Fi Megakit",
+                "url": "https://quaternius.com/packs/modularscifimegakit.html",
+                "source_type": "3d modular environment",
+                "license_model": "CC0",
+                "api_friendly": false,
+                "recommended_for": [
+                    "space station",
+                    "corridors",
+                    "interior modules"
+                ],
+                "notes": "Один из лучших готовых sci-fi наборов."
+            },
+            {
+                "id": "kenney_modular_space_kit",
+                "title": "Kenney Modular Space Kit",
+                "url": "https://kenney.nl/assets/modular-space-kit",
+                "source_type": "3d modular environment",
+                "license_model": "CC0 / Public Domain style release",
+                "api_friendly": false,
+                "recommended_for": [
+                    "space levels",
+                    "prototype ships",
+                    "stations"
+                ],
+                "notes": "Подходит для быстрых блок-аутов и продакшн-стиля low poly."
+            },
+            {
+                "id": "poly_pizza",
+                "title": "Poly Pizza",
+                "url": "https://polypizza.com/",
+                "source_type": "3d models",
+                "license_model": "Site-specific, verify per asset/use case",
+                "api_friendly": false,
+                "recommended_for": [
+                    "quick low poly props",
+                    "stylized assets"
+                ],
+                "notes": "Удобный источник low-poly моделей."
+            },
+            {
+                "id": "sketchfab_free",
+                "title": "Sketchfab Free 3D Models",
+                "url": "https://sketchfab.com/features/free-3d-models",
+                "source_type": "3d models",
+                "license_model": "Mixed Creative Commons / verify per model",
+                "api_friendly": true,
+                "recommended_for": [
+                    "specific props",
+                    "hero assets",
+                    "reference models"
+                ],
+                "notes": "Нужно проверять лицензию и downloadable status."
+            },
+            {
+                "id": "itch_scifi_3d",
+                "title": "itch.io Sci-Fi 3D Assets",
+                "url": "https://itch.io/game-assets/free/tag-3d/tag-science-fiction",
+                "source_type": "3d assets",
+                "license_model": "Mixed, verify per asset",
+                "api_friendly": false,
+                "recommended_for": [
+                    "discovery",
+                    "free themed packs"
+                ],
+                "notes": "Хорош для поиска тематических бесплатных паков."
+            }
+        ],
+        "animations": [
+            {
+                "id": "quaternius_universal_animation_library",
+                "title": "Quaternius Universal Animation Library",
+                "url": "https://quaternius.com/packs/universalanimationlibrary.html",
+                "source_type": "animations",
+                "license_model": "CC0",
+                "api_friendly": false,
+                "recommended_for": [
+                    "character movement",
+                    "retargeting",
+                    "prototype combat"
+                ],
+                "notes": "Удобно для Godot, Unity и Unreal."
+            }
+        ],
+        "ui_icons": [
+            {
+                "id": "game_icons",
+                "title": "Game Icons",
+                "url": "https://game-icons.net/",
+                "source_type": "icons",
+                "license_model": "See site/license terms",
+                "api_friendly": false,
+                "github": "https://github.com/game-icons/icons",
+                "recommended_for": [
+                    "hud",
+                    "status icons",
+                    "inventory",
+                    "ability icons"
+                ],
+                "notes": "SVG-иконки удобно перекрашивать и собирать в атлас."
+            },
+            {
+                "id": "kenney_input_prompts",
+                "title": "Kenney Input Prompts",
+                "url": "https://kenney.nl/assets/input-prompts",
+                "source_type": "ui prompts",
+                "license_model": "CC0 / Public Domain style release",
+                "api_friendly": false,
+                "recommended_for": [
+                    "controller prompts",
+                    "keyboard hints",
+                    "tutorial ui"
+                ],
+                "notes": "Полезно для кроссплатформенного UI."
+            },
+            {
+                "id": "itch_scifi_ui",
+                "title": "itch.io Sci-Fi UI Assets",
+                "url": "https://itch.io/game-assets/free/tag-science-fiction/tag-user-interface",
+                "source_type": "ui packs",
+                "license_model": "Mixed, verify per asset",
+                "api_friendly": false,
+                "recommended_for": [
+                    "hud kits",
+                    "futuristic panels",
+                    "menus"
+                ],
+                "notes": "Можно быстро найти готовый sci-fi HUD."
+            },
+            {
+                "id": "sungraphica_scifi_ui_free",
+                "title": "Sci Fi Game UI Collection Free Version",
+                "url": "https://sungraphica.itch.io/sci-fi-game-ui-collection-free-version",
+                "source_type": "ui pack",
+                "license_model": "Verify on asset page",
+                "api_friendly": false,
+                "recommended_for": [
+                    "free sci-fi interface",
+                    "prototype hud"
+                ],
+                "notes": "Готовый бесплатный UI-пак."
+            }
+        ],
+        "audio_sfx_music": [
+            {
+                "id": "freesound",
+                "title": "Freesound",
+                "url": "https://freesound.org/",
+                "source_type": "sfx_audio",
+                "license_model": "Mixed, verify per sound",
+                "api_friendly": true,
+                "recommended_for": [
+                    "ui bleeps",
+                    "machine hum",
+                    "ambience",
+                    "weapon fx"
+                ],
+                "notes": "Есть API, но лицензию проверять обязательно."
+            },
+            {
+                "id": "sonniss_gdc",
+                "title": "Sonniss GDC Bundle",
+                "url": "https://sonniss.com/gameaudiogdc/",
+                "source_type": "sfx packs",
+                "license_model": "Royalty free, see bundle terms",
+                "api_friendly": false,
+                "recommended_for": [
+                    "high quality sfx",
+                    "impacts",
+                    "ui sounds",
+                    "cinematic design"
+                ],
+                "notes": "Очень сильная база профессиональных звуков."
+            },
+            {
+                "id": "mixkit_sfx",
+                "title": "Mixkit Sound Effects",
+                "url": "https://mixkit.co/free-sound-effects/",
+                "source_type": "sfx_audio",
+                "license_model": "Mixkit License",
+                "api_friendly": false,
+                "recommended_for": [
+                    "alerts",
+                    "menus",
+                    "transitions"
+                ],
+                "notes": "Просто брать быстрые бесплатные звуки."
+            },
+            {
+                "id": "mixkit_music",
+                "title": "Mixkit Music",
+                "url": "https://mixkit.co/free-stock-music/",
+                "source_type": "music",
+                "license_model": "Mixkit License",
+                "api_friendly": false,
+                "recommended_for": [
+                    "menu music",
+                    "ambient synth",
+                    "background tracks"
+                ],
+                "notes": "Полезно для ранних билдов и прототипов."
+            },
+            {
+                "id": "pixabay_audio",
+                "title": "Pixabay Sound Effects",
+                "url": "https://pixabay.com/sound-effects/",
+                "source_type": "sfx_audio",
+                "license_model": "Pixabay License",
+                "api_friendly": false,
+                "recommended_for": [
+                    "generic sfx",
+                    "filler sounds",
+                    "prototype audio"
+                ],
+                "notes": "Удобно как запасной источник."
+            }
+        ],
+        "code_templates_shaders": [
+            {
+                "id": "godot_demo_projects",
+                "title": "Godot Demo Projects",
+                "url": "https://github.com/godotengine/godot-demo-projects",
+                "source_type": "code_samples",
+                "license_model": "See repository license",
+                "api_friendly": true,
+                "recommended_for": [
+                    "movement",
+                    "camera",
+                    "3d basics",
+                    "sample mechanics"
+                ],
+                "notes": "Официальные демо-проекты Godot."
+            },
+            {
+                "id": "gdquest_demos",
+                "title": "GDQuest Demos",
+                "url": "https://github.com/gdquest-demos",
+                "source_type": "code_samples",
+                "license_model": "Depends on repository",
+                "api_friendly": true,
+                "recommended_for": [
+                    "architecture examples",
+                    "game systems",
+                    "godot learning"
+                ],
+                "notes": "Хорошие open-source примеры."
+            },
+            {
+                "id": "gdquest_godot_shaders",
+                "title": "GDQuest Godot Shaders",
+                "url": "https://github.com/gdquest-demos/godot-shaders",
+                "source_type": "shaders",
+                "license_model": "MIT for code, CC-BY 4.0 for art assets",
+                "api_friendly": true,
+                "recommended_for": [
+                    "shield fx",
+                    "hologram fx",
+                    "post process",
+                    "sci-fi materials"
+                ],
+                "notes": "Полезно для визуальных sci-fi эффектов."
+            },
+            {
+                "id": "unity_technologies",
+                "title": "Unity Technologies GitHub",
+                "url": "https://github.com/Unity-Technologies",
+                "source_type": "engine_samples",
+                "license_model": "Depends on repository",
+                "api_friendly": true,
+                "recommended_for": [
+                    "render pipeline samples",
+                    "gameplay examples",
+                    "editor tooling"
+                ],
+                "notes": "Официальные репозитории Unity."
+            },
+            {
+                "id": "epic_games_github",
+                "title": "Epic Games GitHub",
+                "url": "https://github.com/epicgames",
+                "source_type": "engine_samples",
+                "license_model": "Epic/Unreal terms apply",
+                "api_friendly": true,
+                "recommended_for": [
+                    "unreal source access",
+                    "samples",
+                    "advanced systems"
+                ],
+                "notes": "Требует связку GitHub с Epic аккаунтом."
+            },
+            {
+                "id": "tranek_gas_documentation",
+                "title": "GASDocumentation",
+                "url": "https://github.com/tranek/GASDocumentation",
+                "source_type": "unreal gameplay system sample",
+                "license_model": "See repository license",
+                "api_friendly": true,
+                "recommended_for": [
+                    "abilities",
+                    "attributes",
+                    "combat systems"
+                ],
+                "notes": "Отличный reference по Gameplay Ability System."
+            },
+            {
+                "id": "awesome_open_source_games",
+                "title": "Awesome Open Source Games",
+                "url": "https://github.com/michelpereira/awesome-open-source-games",
+                "source_type": "game source index",
+                "license_model": "Index only, verify per linked project",
+                "api_friendly": true,
+                "recommended_for": [
+                    "architecture references",
+                    "system extraction",
+                    "learning from full games"
+                ],
+                "notes": "Полезно брать куски архитектуры."
+            }
+        ],
+        "meta_indexes": [
+            {
+                "id": "gamedev_free_resources",
+                "title": "gamedev-free-resources",
+                "url": "https://github.com/teamgravitydev/gamedev-free-resources",
+                "source_type": "resource index",
+                "license_model": "Index only",
+                "api_friendly": true,
+                "recommended_for": [
+                    "discovery",
+                    "fallback sources"
+                ],
+                "notes": "Сводный GitHub-каталог."
+            },
+            {
+                "id": "awesome_gamedev",
+                "title": "awesome-gamedev",
+                "url": "https://github.com/calinou/awesome-gamedev",
+                "source_type": "resource index",
+                "license_model": "Index only",
+                "api_friendly": true,
+                "recommended_for": [
+                    "tools",
+                    "engines",
+                    "assets",
+                    "libraries"
+                ],
+                "notes": "Широкий curated список."
+            },
+            {
+                "id": "fronkon_awesome_gamedev",
+                "title": "Awesome Gamedev",
+                "url": "https://github.com/FronkonGames/Awesome-Gamedev",
+                "source_type": "resource index",
+                "license_model": "Index only",
+                "api_friendly": true,
+                "recommended_for": [
+                    "discovery",
+                    "plugins",
+                    "references"
+                ],
+                "notes": "Еще один полезный каталог."
+            }
+        ]
+    },
+    "starter_bundle": {
+        "fonts": [
+            "google_fonts",
+            "orbitron"
+        ],
+        "textures_materials_hdri": [
+            "poly_haven",
+            "ambientcg"
+        ],
+        "models_3d": [
+            "quaternius_modular_scifi_megakit",
+            "kenney_modular_space_kit"
+        ],
+        "ui_icons": [
+            "game_icons",
+            "kenney_input_prompts"
+        ],
+        "audio_sfx_music": [
+            "sonniss_gdc",
+            "freesound"
+        ],
+        "code_templates_shaders": [
+            "godot_demo_projects",
+            "gdquest_godot_shaders"
+        ]
+    }
+}

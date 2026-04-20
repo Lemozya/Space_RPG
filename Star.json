@@ -1,0 +1,228 @@
+{
+    "goal": "star_map_like_mass_effect",
+    "style": "clean_holographic_galaxy_ui",
+    "recommended_approach": {
+        "type": "2.5D UI map",
+        "reason": "Для карты в стиле Mass Effect важнее данные звёзд, HUD и эффекты навигации, чем тяжёлые 3D-модели.",
+        "render_layers": [
+            "nebula_background",
+            "starfield_points",
+            "cluster_labels",
+            "travel_routes",
+            "system_focus_panel",
+            "hover_and_selection_fx"
+        ]
+    },
+    "recommended_assets": {
+        "star_data": [
+            {
+                "name": "HYG Stellar Database 4.2",
+                "url": "https://www.astronexus.com/hyg",
+                "use_for": [
+                    "база звёзд",
+                    "координаты",
+                    "названия систем",
+                    "быстрый прототип"
+                ],
+                "priority": "highest",
+                "why": "Хороший старт для карты галактики: достаточно лёгкая база и уже пригодна для игры.",
+                "license_hint": "CC BY-SA 4.0"
+            },
+            {
+                "name": "ESA Gaia DR3",
+                "url": "https://www.cosmos.esa.int/web/gaia/dr3",
+                "use_for": [
+                    "реалистичная плотность звёзд",
+                    "процедурная генерация кластеров",
+                    "слои дальнего космоса"
+                ],
+                "priority": "medium",
+                "why": "Более серьёзный источник данных, если нужна более реалистичная карта.",
+                "license_hint": "Проверяй условия использования данных ESA/Gaia"
+            },
+            {
+                "name": "NASA Exoplanet Archive API",
+                "url": "https://exoplanetarchive.ipac.caltech.edu/docs/program_interfaces.html",
+                "use_for": [
+                    "метаданные планет",
+                    "названия систем",
+                    "дополнительные карточки систем"
+                ],
+                "priority": "high",
+                "why": "Подходит для панели информации о системе: тип звезды, планеты, интересные данные.",
+                "license_hint": "Проверяй условия API и attribution при публикации"
+            }
+        ],
+        "backgrounds": [
+            {
+                "name": "OpenGameArt - Seamless Space Backgrounds",
+                "url": "https://opengameart.org/content/seamless-space-backgrounds",
+                "use_for": [
+                    "тайловый фон карты",
+                    "далёкие туманности",
+                    "слой космоса под UI"
+                ],
+                "priority": "highest",
+                "why": "Готовый бесшовный фон для страт-карты без лишней доработки.",
+                "license_hint": "Проверяй страницу ассета"
+            },
+            {
+                "name": "OpenGameArt - Space Background",
+                "url": "https://opengameart.org/content/space-background-0",
+                "use_for": [
+                    "статичный задний фон",
+                    "главное меню",
+                    "галактический backdrop"
+                ],
+                "priority": "high",
+                "why": "Быстрый бесплатный вариант для первого билда.",
+                "license_hint": "CC0 tag/page context present, но всё равно сохрани метаданные"
+            },
+            {
+                "name": "StockSnap CC0 Nebula / Cosmic",
+                "url": "https://stocksnap.io/search/nebula",
+                "use_for": [
+                    "небулы",
+                    "атмосферные задники",
+                    "маркетинговые mockup-фоны"
+                ],
+                "priority": "medium",
+                "why": "Можно быстро собрать красивый бэкграунд для карты и экранов перехода.",
+                "license_hint": "CC0"
+            }
+        ],
+        "ui_hud": [
+            {
+                "name": "Kenney UI Pack Sci-Fi",
+                "url": "https://kenney.nl/assets/ui-pack-sci-fi",
+                "use_for": [
+                    "панели",
+                    "рамки",
+                    "кнопки",
+                    "виджеты выбора системы"
+                ],
+                "priority": "highest",
+                "why": "Самый прямой готовый набор для футуристического интерфейса.",
+                "license_hint": "CC0 via Kenney asset pages/support"
+            },
+            {
+                "name": "Kenney UI Pack",
+                "url": "https://kenney-assets.itch.io/ui-pack",
+                "use_for": [
+                    "базовые кнопки",
+                    "fallback-элементы интерфейса",
+                    "tooltip и окна"
+                ],
+                "priority": "high",
+                "why": "Удобный запасной UI-набор, если sci-fi pack не покрывает все состояния.",
+                "license_hint": "CC0 1.0 Universal"
+            },
+            {
+                "name": "Game Icons",
+                "url": "https://game-icons.net/",
+                "use_for": [
+                    "иконки фракций",
+                    "иконки ресурсов",
+                    "статусы систем",
+                    "типы миссий"
+                ],
+                "priority": "highest",
+                "why": "SVG-иконки легко стилизовать под синий/бирюзовый holographic HUD.",
+                "license_hint": "Mostly CC-BY, some Public Domain; check per icon/site FAQ"
+            },
+            {
+                "name": "Orbitron",
+                "url": "https://github.com/theleagueof/orbitron",
+                "use_for": [
+                    "названия кластеров",
+                    "заголовки панелей",
+                    "системные лейблы"
+                ],
+                "priority": "highest",
+                "why": "Очень узнаваемый sci-fi шрифт для карт и терминалов.",
+                "license_hint": "OFL"
+            }
+        ],
+        "audio": [
+            {
+                "name": "Sonniss GDC Bundle",
+                "url": "https://sonniss.com/gameaudiogdc/",
+                "use_for": [
+                    "hover fx",
+                    "select fx",
+                    "ui whooshes",
+                    "system lock sounds"
+                ],
+                "priority": "highest",
+                "why": "Лучший быстрый источник качественных интерфейсных и технологичных SFX.",
+                "license_hint": "Royalty-free, no attribution required per bundle/archive page"
+            },
+            {
+                "name": "Freesound",
+                "url": "https://freesound.org/",
+                "use_for": [
+                    "bleeps",
+                    "radar pings",
+                    "computer clicks",
+                    "ambient drone"
+                ],
+                "priority": "high",
+                "why": "Полезно добрать точечные звуки, которых не хватает в основном паке.",
+                "license_hint": "Проверяй лицензию каждого звука"
+            }
+        ]
+    },
+    "generate_in_engine_instead_of_downloading": [
+        {
+            "element": "travel_routes",
+            "implementation": "line renderer / spline + glow material",
+            "why": "Маршруты между системами лучше рисовать процедурно."
+        },
+        {
+            "element": "star_glow",
+            "implementation": "shader + bloom + size by importance",
+            "why": "Так карта будет читаться лучше, чем с готовыми PNG-звёздами."
+        },
+        {
+            "element": "selection_ring",
+            "implementation": "animated shader ring",
+            "why": "Эффект выбора должен быть живым и подчиняться UI-стилю проекта."
+        },
+        {
+            "element": "fog_of_war_or_scanned_regions",
+            "implementation": "mask texture + animated opacity",
+            "why": "Это лучше генерировать на основе прогресса игрока."
+        }
+    ],
+    "minimal_starter_bundle": {
+        "use_this_first": [
+            "HYG Stellar Database 4.2",
+            "OpenGameArt - Seamless Space Backgrounds",
+            "Kenney UI Pack Sci-Fi",
+            "Game Icons",
+            "Orbitron",
+            "Sonniss GDC Bundle"
+        ],
+        "result": "Этого достаточно, чтобы собрать первый Mass Effect-like star map без 3D-моделей планет."
+    },
+    "optional_next_step_assets": [
+        {
+            "name": "Kenney Space Kit",
+            "url": "https://kenney.nl/assets/space-kit",
+            "use_for": [
+                "миниатюры кораблей",
+                "иконки станций",
+                "сцены перехода между картой и миссией"
+            ],
+            "priority": "optional",
+            "why": "Нужен не для самой карты, а если ты хочешь показывать корабли/станции в узлах."
+        }
+    ],
+    "avoid_for_first_version": [
+        "реалистичные 3D планеты на каждой системе",
+        "слишком детальные фоны с большим количеством контраста",
+        "много разных шрифтов",
+        "сложные 3D-модели вместо чистого UI",
+        "рандомные иконки без единого визуального стиля"
+    ]
+}
